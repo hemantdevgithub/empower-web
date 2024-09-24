@@ -10,5 +10,5 @@ export type TPollAnswerResponse = {
     noCount: number;
     maybeCount: number;
     totalParticipants: number;
-  }
-}
+  };
+};

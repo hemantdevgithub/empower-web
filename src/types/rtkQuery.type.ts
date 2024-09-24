@@ -12,13 +12,7 @@ import {
 export type TCreateCollection = MutationTrigger<
   MutationDefinition<
     any,
-    BaseQueryFn<
-      string | FetchArgs,
-      unknown,
-      FetchBaseQueryError,
-      {},
-      FetchBaseQueryMeta
-    >,
+    BaseQueryFn<string | FetchArgs, unknown, FetchBaseQueryError, {}, FetchBaseQueryMeta>,
     "Quiz" | "Quizzes",
     any,
     "api"

@@ -25,5 +25,5 @@ export const professionalOpportunityValidationSchema = z.object({
   startDates: z.array(arrayOfObject).optional(),
   durations: z.array(arrayOfObject).optional(),
   interviewModels: z.array(arrayOfObject).optional(),
-  candidateIds:z.array(z.string()).optional()
+  candidateIds: z.array(z.string()).optional(),
 });

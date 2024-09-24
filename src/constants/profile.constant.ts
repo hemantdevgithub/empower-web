@@ -1,17 +1,8 @@
-export const Pwd = [
-  "SENSORY_VISION",
-  "SENSORY_SPEECH_&_HEARING_IMPAIRED",
-  "PHYSICAL_PARAPLEGIC",
-  "OTHERS",
-];
+export const Pwd = ["SENSORY_VISION", "SENSORY_SPEECH_&_HEARING_IMPAIRED", "PHYSICAL_PARAPLEGIC", "OTHERS"];
 export const u_perCategories = [
   {
     category: "Underprivileged",
-    items: [
-      "IMMIGRATIONS_&_REFUGEES",
-      "RURAL",
-      "ECONOMICALLY_DISADVANTAGED_INDIVIDUAL",
-    ],
+    items: ["IMMIGRATIONS_&_REFUGEES", "RURAL", "ECONOMICALLY_DISADVANTAGED_INDIVIDUAL"],
   },
   {
     category: "Unemployment/Underemployment",

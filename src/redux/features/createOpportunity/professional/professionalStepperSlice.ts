@@ -50,10 +50,7 @@ const professionalStepperSlice = createSlice({
   name: "professionalStepper",
   initialState,
   reducers: {
-    updateProfessionalFormValues: (
-      state,
-      action: PayloadAction<Partial<FormData>>
-    ) => {
+    updateProfessionalFormValues: (state, action: PayloadAction<Partial<FormData>>) => {
       state.formData = { ...state.formData, ...action.payload };
     },
     goToNextStep: (state) => {
@@ -69,16 +66,12 @@ const professionalStepperSlice = createSlice({
   },
 });
 
-export const { updateProfessionalFormValues, goToNextStep, goToPrevStep } =
-  professionalStepperSlice.actions;
+export const { updateProfessionalFormValues, goToNextStep, goToPrevStep } = professionalStepperSlice.actions;
 
 export const professionalStepperReducer = professionalStepperSlice.reducer;
 
-export const professionalFormCurrentStep = (state: RootState) =>
-  state.professionalStepper.currentStep;
+export const professionalFormCurrentStep = (state: RootState) => state.professionalStepper.currentStep;
 
-export const isProfLastStep = (state: RootState) =>
-  state.professionalStepper.currentStep === 13;
+export const isProfLastStep = (state: RootState) => state.professionalStepper.currentStep === 13;
 
-export const isProfFirstStep = (state: RootState) =>
-  state.professionalStepper.currentStep === 1;
+export const isProfFirstStep = (state: RootState) => state.professionalStepper.currentStep === 1;

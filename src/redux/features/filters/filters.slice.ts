@@ -27,10 +27,7 @@ const filtersSlice = createSlice({
   initialState,
   reducers: {
     // select category
-    selectCategory: (
-      state,
-      action: PayloadAction<{ category: string; name: string }>
-    ) => {
+    selectCategory: (state, action: PayloadAction<{ category: string; name: string }>) => {
       if (action.payload.name === "lessons") {
         state.lessons.category = action.payload.category;
       } else if (action.payload.name === "articles") {
@@ -45,7 +42,5 @@ export const { selectCategory } = filtersSlice.actions;
 
 // selector
 export const selectLessonsFilters = (state: RootState) => state.filters.lessons;
-export const selectResearchAndDevelopmentsFilters = (state: RootState) =>
-  state.filters.researchAndDevelopments;
-export const selectArticlesFilters = (state: RootState) =>
-  state.filters.articles;
+export const selectResearchAndDevelopmentsFilters = (state: RootState) => state.filters.researchAndDevelopments;
+export const selectArticlesFilters = (state: RootState) => state.filters.articles;

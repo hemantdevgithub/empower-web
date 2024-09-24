@@ -8,17 +8,13 @@ export const updateUserProfileValidation = z.object({
   email: z.string().email().optional(),
 
   // people with barriers category
-  pwdType: z
-    .array(z.enum(["", ...Pwd] as [string, ...string[]]).optional())
-    .optional(),
+  pwdType: z.array(z.enum(["", ...Pwd] as [string, ...string[]]).optional()).optional(),
   pwdProof: z.any().optional(),
   isMilitaryVeterans: z.boolean().optional(),
   militaryVeteransProof: z.any().optional(),
   isLinguisticBarrier: z.boolean().optional(),
   linguisticBarrierProof: z.any().optional(),
-  U_PERType: z
-    .array(z.enum(["", ...U_PERconst] as [string, ...string[]]).optional())
-    .optional(),
+  U_PERType: z.array(z.enum(["", ...U_PERconst] as [string, ...string[]]).optional()).optional(),
   U_PERtYPEProof: z.any().optional(),
   gender: z.enum(["", ...Gender] as [string, ...string[]]),
   genderProof: z.any().optional(),

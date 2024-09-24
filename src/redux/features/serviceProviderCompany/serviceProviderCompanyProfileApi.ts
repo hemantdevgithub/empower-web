@@ -12,5 +12,4 @@ const serviceProviderCompanyProfileApi = baseApi.injectEndpoints({
   }),
 });
 
-export const { useCreateServiceProviderCompanyProfileMutation } =
-  serviceProviderCompanyProfileApi;
+export const { useCreateServiceProviderCompanyProfileMutation } = serviceProviderCompanyProfileApi;

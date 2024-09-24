@@ -18,7 +18,4 @@ const notificationApi = baseApi.injectEndpoints({
   }),
 });
 
-export const {
-  useCreateNotificationMutation,
-  useGetAllUnreadNotificationQuery,
-} = notificationApi;
+export const { useCreateNotificationMutation, useGetAllUnreadNotificationQuery } = notificationApi;

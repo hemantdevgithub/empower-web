@@ -15,5 +15,4 @@ const valueChainApi = baseApi.injectEndpoints({
   }),
 });
 
-export const { useGetAllValueChainQuery, useGetSingleValueChainQuery } =
-  valueChainApi;
+export const { useGetAllValueChainQuery, useGetSingleValueChainQuery } = valueChainApi;

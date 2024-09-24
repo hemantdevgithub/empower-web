@@ -92,7 +92,6 @@ const srmProfileApi = baseApi.injectEndpoints({
         method: "GET",
       }),
     }),
-    
   }),
 });
 

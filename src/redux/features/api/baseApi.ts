@@ -30,11 +30,11 @@ const baseQuery = fetchBaseQuery({
 });
 
 // get refresh token
-const baseQueryWithRefreshToken: BaseQueryFn<
-  FetchArgs,
-  BaseQueryApi,
-  DefinitionType
-> = async (args, api, extraOptions) => {
+const baseQueryWithRefreshToken: BaseQueryFn<FetchArgs, BaseQueryApi, DefinitionType> = async (
+  args,
+  api,
+  extraOptions
+) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let result: any = await baseQuery(args, api, extraOptions);
 
@@ -105,7 +105,7 @@ const baseApi = createApi({
     "SRMProfiles",
     "AssignedSRMProfiles",
     "CandidateProfiles",
-    "Schedule"
+    "Schedule",
   ],
 });
 

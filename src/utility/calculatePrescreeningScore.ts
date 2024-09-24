@@ -1,9 +1,6 @@
 import { TCandidateInfo, TJobPost, TLabelValuePair } from "@/types";
 
-function calculatePrescreeningScore(
-  jobDetails: TJobPost,
-  candidateProfile: TCandidateInfo
-): number {
+function calculatePrescreeningScore(jobDetails: TJobPost, candidateProfile: TCandidateInfo): number {
   let score = 0;
   const totalPoints = 50; // Total points to distribute
 
@@ -27,9 +24,7 @@ function calculatePrescreeningScore(
   if (
     jobDetails.workModels.some(
       (model) =>
-        model.value === candidateProfile.work_model ||
-        model.value === "ANY" ||
-        candidateProfile.work_model === "ANY"
+        model.value === candidateProfile.work_model || model.value === "ANY" || candidateProfile.work_model === "ANY"
     )
   ) {
     score += fieldPoints;
@@ -51,9 +46,7 @@ function calculatePrescreeningScore(
   if (jobDetails.paymentType === candidateProfile.payment_type) {
     score += fieldPoints;
     if (jobDetails.paymentType && candidateProfile.bill_rate) {
-      if (
-        isBillRateInRange(candidateProfile.bill_rate, jobDetails.paymentRanges)
-      ) {
+      if (isBillRateInRange(candidateProfile.bill_rate, jobDetails.paymentRanges)) {
         score += fieldPoints;
       }
     }
@@ -88,10 +81,7 @@ function calculatePrescreeningScore(
 }
 
 // Parse the range value (e.g., "1-10", "100000-150000", "Above - $100") and check if bill_rate fits
-function isBillRateInRange(
-  bill_rate: number,
-  paymentRanges: TLabelValuePair[]
-): boolean {
+function isBillRateInRange(bill_rate: number, paymentRanges: TLabelValuePair[]): boolean {
   for (const option of paymentRanges) {
     const range = option.value.split("-");
     // If the value is "Above" (e.g. "100,", "350000"), handle it separately

@@ -6,7 +6,7 @@ const addSkillApi = baseApi.injectEndpoints({
       query: ({ userId, skillData }) => ({
         url: `/profile-skills/add/${userId}`,
         method: "POST",
-        body: { ...skillData }
+        body: { ...skillData },
       }),
       invalidatesTags: ["ProfileSkills"],
     }),
@@ -38,9 +38,8 @@ const addSkillApi = baseApi.injectEndpoints({
 });
 
 export const {
- useAddProfileSkillMutation,
+  useAddProfileSkillMutation,
   useGetProfileSkillByUserIdQuery,
   useUpdateProfileSkillMutation,
   useDeleteProfileSkillMutation,
-  
 } = addSkillApi;
