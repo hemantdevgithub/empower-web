@@ -12,7 +12,7 @@ export const rolesKeyValue = [
   { label: "Investor", value: "INVESTOR" },
 ];
 
-export const TRole = {
+export const Role = {
   USER: "USER",
   CANDIDATE: "CANDIDATE",
   INTERVIEWER: "INTERVIEWER",

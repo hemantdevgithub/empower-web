@@ -8,3 +8,4 @@ export * from "./certificate.types";
 export * from "./candidate.types";
 export * from "./skill.types";
 export * from "./file.types";
+export * from "./sidebar.types";

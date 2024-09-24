@@ -1,3 +1,7 @@
-export const App = () => {
-  return <div>App</div>;
-};
+import MainLayout from "./components/layouts/main-layout";
+
+function App() {
+  return <MainLayout />;
+}
+
+export default App;
