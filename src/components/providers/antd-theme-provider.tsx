@@ -7,7 +7,7 @@ const AntDesignThemeProvider = ({ children }: { children: ReactNode }) => {
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: colors.primary[0],
+          colorPrimary: colors.secondary[0],
         },
       }}
     >

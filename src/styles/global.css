@@ -1,8 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
   font-family: "Poppins", sans-serif, system-ui;
+}
+
+/* HTML: <div class="inverted-radius"></div> */
+.inverted-radius {
+  --r: 25px; /* the radius */
+  --s: 40px; /* the size of the corner*/
+
+  width: 100%;
+  height: 257px;
+  aspect-ratio: 1;
+  background: #ffffff;
+  border-radius: var(--r);
+  --_m: /calc(2 * var(--r)) calc(2 * var(--r)) radial-gradient(#000 70%, #0000 72%) no-repeat;
+  mask:
+    right calc(var(--s) + var(--r)) top 0 var(--_m),
+    right calc(var(--s) + var(--r)) var(--_m),
+    radial-gradient(var(--s) at 100% 0, #0000 99%, #000 101%) calc(-1 * var(--r)) var(--r) no-repeat,
+    conic-gradient(at calc(100% - var(--s) - 2 * var(--r)) calc(var(--s) + 2 * var(--r)), #0000 25%, #000 0);
 }

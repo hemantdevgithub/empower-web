@@ -13,6 +13,9 @@ const config: Config = {
         "secondary-gradient": `linear-gradient(90deg,${colors.secondary[0]},${colors.secondary[1]})`,
         "stroke-gradient": `linear-gradient(90deg,${colors.stroke[0]},${colors.stroke[1]})`,
       },
+      fontFamily: {
+        dancing: ['"Dancing Script"', "cursive"],
+      },
       colors: {
         primary: {
           DEFAULT: colors.primary[0],
