@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { Layout, Menu } from "antd";
+import { Layout } from "antd";
 import { Role } from "../../constants/roles";
-import { sidebarItemsGenerator } from "../../utility/sidebarItemsGenerator";
 import { investorPaths } from "../../routes/investor.routes";
+import { sidebarItemsGenerator } from "../../utility/sidebarItemsGenerator";
 
 const { Sider } = Layout;
 
@@ -23,29 +22,37 @@ const Sidebar = () => {
   }
 
   return (
-    <Sider
-      breakpoint="lg"
-      collapsedWidth="0"
-      style={{ height: "100vh", position: "sticky", top: "0", left: "0" }}
-    >
-      <div
-        style={{
-          color: "white",
-          height: "4rem",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h1>Empower</h1>
+    <Sider width={"326px"} style={{ height: "100vh", position: "sticky", top: "0", left: "0" }}>
+      <div className="space-y-5 text-white">
+        <div
+          className="border-b"
+          style={{
+            color: "white",
+            height: "4rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1>Empower</h1>
+        </div>
+        <SidebarMenu />
       </div>
-      <Menu
-        theme="dark"
-        mode="inline"
-        defaultSelectedKeys={["4"]}
-        items={sidebarItems as any}
-      />
     </Sider>
+  );
+};
+
+const SidebarMenu = () => {
+  return (
+    <div className="px-5">
+      {Array.from({
+        length: 5,
+      }).map((_x, i) => (
+        <div key={i}>
+          <img src="/" alt="" />
+        </div>
+      ))}
+    </div>
   );
 };
 
