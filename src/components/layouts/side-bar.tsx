@@ -5,12 +5,12 @@ import { useState } from "react";
 import { Role } from "../../constants/roles";
 import { investorPaths } from "../../routes/investor.routes";
 import { sidebarItemsGenerator } from "../../utility/sidebarItemsGenerator";
+import { useAppSelector } from "@/redux/hooks";
+import { selectUser } from "@/redux/features/auth/authSlice";
 const { Sider } = Layout;
 
 const Sidebar = () => {
-  const user = {
-    current_role: "INVESTOR",
-  };
+  const user = useAppSelector(selectUser);
 
   let sidebarItems;
 
@@ -50,7 +50,10 @@ const SidebarMenuItems = () => {
   const [open, setOpen] = useState(true);
   return (
     <ul className="relative">
-      <div onClick={() => setOpen((prev) => !prev)} className="flex cursor-pointer items-center gap-3 text-lg text-primary">
+      <div
+        onClick={() => setOpen((prev) => !prev)}
+        className="flex cursor-pointer items-center gap-3 text-lg text-primary"
+      >
         <img src="/performance-active.png" className="size-[30px]" alt="Icons" />
         <span>Performance</span>
       </div>
@@ -62,7 +65,6 @@ const SidebarMenuItems = () => {
                 <img src="/performance.png" className="size-[30px]" alt="Icons" />
                 <span>Performance</span>
               </div>
-              
             </li>
           ))}
         </>
