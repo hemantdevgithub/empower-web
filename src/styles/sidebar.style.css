@@ -1,0 +1,34 @@
+.tree ul {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.tree li::before,
+.tree li::after {
+  content: "";
+  height: 100%;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  top: 10%;
+  left: 14px;
+}
+.tree li::after {
+  content: "";
+  width: 24px;
+  height: 0;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  left: 14px;
+  top: 54%;
+}
+
+.tree li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  position: relative;
+}
+
+.tree li:last-child::before {
+  height: 46%;
+}
