@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { investorPaths } from "./investor.routes";
 import App from "../App";
 import { routeGenerator } from "../utility/routeGenerator";
+import LoginPage from "@/pages/login";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
 
   {
     path: "/login",
-    element: <div>Here will be login page</div>,
+    element: <LoginPage />,
   },
 
   {

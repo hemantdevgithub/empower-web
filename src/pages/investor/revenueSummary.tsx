@@ -47,7 +47,7 @@ export default function RevenueSummary() {
       <div className="mb-6 flex items-center justify-between">
         <h2 className="text-xl font-semibold text-white">Revenue Stream Summary</h2>
         <div className="flex space-x-2">
-          {["Monthly", "Weekly", "Monthly"].map((tab, index) => (
+          {["Monthly", "Weekly", "Annually"].map((tab, index) => (
             <button
               key={index}
               onClick={() => setActiveTab(tab)}
