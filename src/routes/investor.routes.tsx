@@ -1,8 +1,10 @@
+import InvestorDashbord from "@/pages/investor/dashbord";
+
 export const investorPaths = [
   {
     name: "Dashboard",
     path: "dashboard",
-    element: <p>This is investor dashboard</p>,
+    element: <InvestorDashbord />,
   },
   {
     name: "Main Item 2",
