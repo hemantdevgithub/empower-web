@@ -24,7 +24,7 @@ export default function InvestmentDashboard() {
         </div>
       </div>
 
-      <div className="flex  gap-5">
+      <div className="flex gap-5">
         <div className="w-[60%]">
           <RevenueSummary />
         </div>

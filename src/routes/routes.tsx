@@ -1,8 +1,10 @@
+import LoginPage from "@/pages/login";
 import { createBrowserRouter } from "react-router-dom";
-import { investorPaths } from "./investor.routes";
 import App from "../App";
 import { routeGenerator } from "../utility/routeGenerator";
-import LoginPage from "@/pages/login";
+import { addPaths } from "./add.routes";
+import { investorPaths } from "./investor.routes";
+import { searchPaths } from "./search.routes";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,7 +15,18 @@ const router = createBrowserRouter([
     element: <App />,
     children: routeGenerator(investorPaths),
   },
-
+  // add
+  {
+    path: "/",
+    element: <App />,
+    children: routeGenerator(addPaths),
+  },
+  // search
+  {
+    path: "/",
+    element: <App />,
+    children: routeGenerator(searchPaths),
+  },
   {
     path: "/login",
     element: <LoginPage />,

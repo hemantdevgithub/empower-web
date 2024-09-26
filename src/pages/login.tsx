@@ -29,7 +29,7 @@ const LoginPage: React.FC = () => {
       >
         {" "}
         <div className="mb-12">
-          <h1 className="font-dancing text-left text-[60px] font-normal leading-[65.34px] text-white">
+          <h1 className="text-left font-dancing text-[60px] font-normal leading-[65.34px] text-white">
             Enter <br /> the Future
           </h1>
           <h1 className="flex justify-center pr-20 text-left text-[35px] font-normal leading-[65.34px] text-white">
