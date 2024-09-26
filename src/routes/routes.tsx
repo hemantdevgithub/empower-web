@@ -4,7 +4,7 @@ import App from "../App";
 import { routeGenerator } from "../utility/routeGenerator";
 import { addPaths } from "./add.routes";
 import { investorPaths } from "./investor.routes";
-import { searchPaths } from "./search.routes";
+import { commonPaths } from "./common.routes";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: routeGenerator(searchPaths),
+    children: routeGenerator(commonPaths),
   },
   {
     path: "/login",

@@ -1,28 +1,24 @@
 import InvestorDashboard from "@/pages/investor/dashboard";
+import { DiGoogleAnalytics } from "react-icons/di";
+import { PiFolderUserDuotone } from "react-icons/pi";
+import { TbUsers } from "react-icons/tb";
 
 export const investorPaths = [
   {
-    name: "Dashboard",
-    path: "dashboard",
-    element: <InvestorDashboard />,
-  },
-  {
-    name: "Main Item 2",
+    name: "Portfolio",
+    icon: PiFolderUserDuotone,
     children: [
       {
-        name: "Sub Item 1",
-        path: "sub-item-1",
-        element: <p>Sub Item 1</p>,
+        name: "Performance",
+        path: "performance",
+        element: <InvestorDashboard />,
+        icon: DiGoogleAnalytics,
       },
       {
-        name: "Sub Item ",
-        path: "sub-item-2",
-        element: <p>Sub Item 2</p>,
-      },
-      {
-        name: "Sub Item 3",
-        path: "sub-item-3",
-        element: <p>Sub Item 3</p>,
+        name: "Teams",
+        path: "teams",
+        element: <InvestorDashboard />,
+        icon: TbUsers,
       },
     ],
   },
