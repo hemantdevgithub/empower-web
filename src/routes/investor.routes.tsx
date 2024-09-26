@@ -1,4 +1,5 @@
 import InvestorDashboard from "@/pages/investor/dashboard";
+import Teams from "@/pages/teams/teams";
 
 export const investorPaths = [
   {
@@ -10,9 +11,9 @@ export const investorPaths = [
     name: "Main Item 2",
     children: [
       {
-        name: "Sub Item 1",
-        path: "sub-item-1",
-        element: <p>Sub Item 1</p>,
+        name: "Teams",
+        path: "teams",
+        element: <Teams />,
       },
       {
         name: "Sub Item ",
