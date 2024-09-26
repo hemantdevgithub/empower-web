@@ -15,8 +15,8 @@ export default function InvestmentDashboard() {
   ];
 
   return (
-    <div className="space-y-4">
-      <div>
+    <>
+      <div className="mb-2">
         <div className="grid grid-cols-4 gap-4">
           {investments.map((investment, index) => (
             <InvestmentCard key={index} {...investment} />
@@ -24,17 +24,17 @@ export default function InvestmentDashboard() {
         </div>
       </div>
 
-      <div className="flex gap-5">
-        <div className="w-[60%]">
+      <div className="flex justify-center gap-7">
+        <div className="w-[923px]">
           <RevenueSummary />
         </div>
-        <div className="w-[40%]">
+        <div className="w-[435px]">
           <InvestmentBalance />
         </div>
       </div>
       <div className="mt-3">
         <HorizontalMetricDashboard />
       </div>
-    </div>
+    </>
   );
 }

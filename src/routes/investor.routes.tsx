@@ -1,4 +1,5 @@
 import InvestorDashboard from "@/pages/investor/dashboard";
+import Teams from "@/pages/teams/teams";
 import { DiGoogleAnalytics } from "react-icons/di";
 import { PiFolderUserDuotone } from "react-icons/pi";
 import { TbUsers } from "react-icons/tb";
@@ -17,7 +18,7 @@ export const investorPaths = [
       {
         name: "Teams",
         path: "teams",
-        element: <InvestorDashboard />,
+        element: <Teams />,
         icon: TbUsers,
       },
     ],

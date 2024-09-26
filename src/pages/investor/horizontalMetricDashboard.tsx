@@ -34,7 +34,7 @@ const CustomerSatisfactionCard: React.FC = () => (
 
 export default function HorizontalMetricDashboard() {
   return (
-    <div className="rounded-2xl bg-accent p-4">
+    <div className="rounded-lg bg-gray-900 p-4">
       <div className="flex flex-col items-stretch space-y-4 sm:flex-row sm:space-y-0">
         <MetricCard
           icon={<TrophyIcon className="h-5 w-5 text-gray-900" />}

@@ -12,7 +12,7 @@ export default function InvestmentCard({ title, amount, percentage, icon, cardTi
   const isPositive = percentage >= 0;
 
   return (
-    <div className="w-full rounded-2xl border border-gray-800 bg-gray-900 p-4">
+    <div className="w-full rounded-md border border-gray-800 bg-gray-900 p-4">
       <div className="mb-2">
         <div className="mr-2 h-8 w-8 items-center justify-center rounded-full bg-gray-800">
           <img src={icon} className="rounded-md bg-primary-gradient" />
