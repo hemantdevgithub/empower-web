@@ -11,7 +11,7 @@ const BusinessDevelopmentCard = () => {
         <div className="rounded-[20px] bg-background p-2">
           <p className="text-lg text-white">Business.</p>
           <div className="flex items-center justify-center">
-            <img src={businessman} alt="Businessman" className="aspect-square w-[140px]" />
+            <img src={businessman} alt="Businessman" className="aspect-square w-[135px]" />
           </div>
           <h4 className="mt-2 text-center font-[500px] text-white">
             <span className="rounded-full bg-secondary-gradient px-2 py-1">Business</span> <span> Development</span>{" "}
