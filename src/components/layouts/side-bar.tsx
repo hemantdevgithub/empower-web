@@ -15,7 +15,7 @@ const Sidebar = () => {
   const commonSidebarItems = sidebarItemsGenerator(commonPaths);
   let sidebarItemsOfUser;
 
-  switch (user!.current_role) {
+  switch (user && user!.current_role) {
     case Role.INVESTOR:
       sidebarItemsOfUser = sidebarItemsGenerator(investorPaths, Role.INVESTOR);
       break;
@@ -24,8 +24,11 @@ const Sidebar = () => {
       break;
   }
 
-  const sidebarItems = [...(sidebarItemsOfUser as TSidebarItem[]), ...commonSidebarItems];
-  // console.log(sidebarItems);
+  const sidebarItems: TSidebarItem[] = [];
+  if (user && user!.current_role) {
+    sidebarItems.push(...(sidebarItemsOfUser as TSidebarItem[]));
+  }
+  sidebarItems.push(...commonSidebarItems);
 
   return (
     <Sider width={"346px"} style={{ height: "100vh", position: "sticky", top: "0", left: "0" }}>
