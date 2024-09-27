@@ -1,9 +1,11 @@
 import AddLanding from "@/pages/add/add-landing";
+import ReferPage from "@/pages/refer/refer-page";
 import SearchLanding from "@/pages/search/search-landing";
 import JobSeekers from "@/pages/search/service-providers/job-seekers";
 import { FaRegCircle } from "react-icons/fa";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 import { IoMdAdd } from "react-icons/io";
+import { LiaShareAltSolid } from "react-icons/lia";
 import { PiSuitcaseSimple } from "react-icons/pi";
 
 export const commonPaths = [
@@ -30,5 +32,11 @@ export const commonPaths = [
     path: "add",
     icon: IoMdAdd,
     element: <AddLanding />,
+  },
+  {
+    name: "Refer",
+    path: "refer",
+    icon: LiaShareAltSolid,
+    element: <ReferPage />,
   },
 ];

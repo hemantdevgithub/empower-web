@@ -1,6 +1,7 @@
 import BusinessDevelopmentCard from "../../components/teams/businessDevelopmentCard";
 import InvestorCommunityCard from "../../components/teams/investorCommunityCard";
 import SupplyChainCard from "../../components/teams/supplyChainCard";
+import ConnectSourcesCard from "@/components/teams/connectSources";
 
 const Teams = () => {
   return (
@@ -8,7 +9,7 @@ const Teams = () => {
       <InvestorCommunityCard />
       <BusinessDevelopmentCard />
       <SupplyChainCard />
-      <SupplyChainCard />
+      <ConnectSourcesCard />
     </div>
   );
 };

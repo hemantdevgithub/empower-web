@@ -15,7 +15,7 @@ const Sidebar = () => {
   const commonSidebarItems = sidebarItemsGenerator(commonPaths);
   let sidebarItemsOfUser;
 
-  switch (user!.current_role) {
+  switch (user && user!.current_role) {
     case Role.INVESTOR:
       sidebarItemsOfUser = sidebarItemsGenerator(investorPaths, Role.INVESTOR);
       break;
@@ -24,10 +24,8 @@ const Sidebar = () => {
       break;
   }
 
-  console.log(sidebarItemsOfUser);
-
   const sidebarItems: TSidebarItem[] = [];
-  if (user) {
+  if (user && user!.current_role) {
     sidebarItems.push(...(sidebarItemsOfUser as TSidebarItem[]));
   }
   sidebarItems.push(...commonSidebarItems);
