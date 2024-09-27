@@ -30,13 +30,8 @@ const MainLayout = () => {
             <span>Dark Mode</span>
           </div>
         </Header>
-        <Content style={{ margin: "24px 16px 0" }}>
-          <div
-            style={{
-              padding: "0px 24px 20px 24px",
-              minHeight: 360,
-            }}
-          >
+        <Content>
+          <div className="px-9 py-5">
             <Outlet />
           </div>
         </Content>
