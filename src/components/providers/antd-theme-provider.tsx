@@ -8,6 +8,12 @@ const AntDesignThemeProvider = ({ children }: { children: ReactNode }) => {
       theme={{
         token: {
           colorPrimary: colors.secondary[0],
+          colorBgBase: colors.accent,
+        },
+        components: {
+          Input: {
+            colorTextPlaceholder: "#ffffffff",
+          },
         },
       }}
     >
