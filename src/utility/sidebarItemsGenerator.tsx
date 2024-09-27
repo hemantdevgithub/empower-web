@@ -77,7 +77,12 @@ export const sidebarItemsGenerator = (items: TUserPath[], role?: string) => {
       if (item.children) {
         acc.push({
           key: item.name as string,
-          label: item.name,
+          label: (
+            <p className="flex items-center gap-1">
+              {item.icon && <item.icon />}
+              <span>{item.name}</span>
+            </p>
+          ),
           children: item.children.map((child) => {
             if (child.name) {
               return {
@@ -99,6 +104,7 @@ export const sidebarItemsGenerator = (items: TUserPath[], role?: string) => {
         });
       }
 
+      console.log(acc);
       return acc;
     }, []);
 
