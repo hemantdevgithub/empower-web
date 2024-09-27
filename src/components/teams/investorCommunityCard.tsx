@@ -9,7 +9,7 @@ import GlobeIcon from "/Group 12023.png";
 const InvestorCommunityCard = () => {
   const investorTeam = [investor1, investor2, investor3];
   return (
-    <div className="aspect-[100/63] space-y-4 rounded-[20px] bg-accent p-9">
+    <div className="space-y-4 rounded-[20px] bg-accent p-9">
       <h3 className="text-lg font-[500px] text-white">Investors Entrepreneur Community</h3>
       <div className="flex items-center gap-3">
         <div className="w-[40%]">

@@ -4,7 +4,7 @@ import image3 from "/image 721.png";
 
 const SupplyChainCard = () => {
   return (
-    <div className="aspect-[100/63] space-y-6 rounded-[20px] bg-accent p-9">
+    <div className="space-y-6 rounded-[20px] bg-accent p-9">
       <div className="flex items-center justify-center">
         <div>
           <h2 className="text-lg font-[500px] text-white">Supply Chain Entrepreneur Community</h2> <br /> <br />
