@@ -1,10 +1,10 @@
-import InvestmentCard from "@/pages/investor/investmentCard";
+import InvestmentCard from "@/components/ui/investmentCard";
 import bdeIcon from "/BDE.png";
 import sceIcon from "/sce.png";
 import returnIcon from "/returns-bde.png";
-import RevenueSummary from "@/pages/investor/revenueSummary";
-import HorizontalMetricDashboard from "@/pages/investor/horizontalMetricDashboard";
-import InvestmentBalance from "./investmentBalance";
+import RevenueSummary from "@/components/ui/revenueSummary";
+import HorizontalMetricDashboard from "@/components/ui/horizontalMetricDashboard";
+import InvestmentBalance from "../../components/ui/investmentBalance";
 
 export default function InvestmentDashboard() {
   const investments = [
