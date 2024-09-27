@@ -24,8 +24,13 @@ const Sidebar = () => {
       break;
   }
 
-  const sidebarItems = [...(sidebarItemsOfUser as TSidebarItem[]), ...commonSidebarItems];
-  // console.log(sidebarItems);
+  console.log(sidebarItemsOfUser);
+
+  const sidebarItems: TSidebarItem[] = [];
+  if (user) {
+    sidebarItems.push(...(sidebarItemsOfUser as TSidebarItem[]));
+  }
+  sidebarItems.push(...commonSidebarItems);
 
   return (
     <Sider width={"346px"} style={{ height: "100vh", position: "sticky", top: "0", left: "0" }}>
