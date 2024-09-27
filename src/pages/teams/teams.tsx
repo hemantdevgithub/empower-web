@@ -1,6 +1,6 @@
-import BusinessDevelopmentCard from "../../components/ui/businessDevelopmentCard";
-import InvestorCommunityCard from "../../components/ui/investorCommunityCard";
-import SupplyChainCard from "../../components/ui/supplyChainCard";
+import BusinessDevelopmentCard from "../../components/teams/businessDevelopmentCard";
+import InvestorCommunityCard from "../../components/teams/investorCommunityCard";
+import SupplyChainCard from "../../components/teams/supplyChainCard";
 
 const Teams = () => {
   return (
