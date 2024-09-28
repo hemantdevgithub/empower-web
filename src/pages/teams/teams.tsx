@@ -7,10 +7,11 @@ import ConnectSourcesCard from "@/components/teams/connectSources";
 const Teams = () => {
   return (
     <div className="grid gap-x-10 gap-y-5 lg:grid-cols-2">
-      <Link to="/INVESTOR/teams/investorEntrepreneurCommunity">
+      <Link to="/investor/teams/investor-entrepreneur-community">
         <InvestorCommunityCard />
       </Link>
-      <Link to="/INVESTOR/teams/businessDevelopmentEntrepreneurCommunity">
+      {/* teams/investor-entrepreneur-community */}
+      <Link to="#">
         <BusinessDevelopmentCard />
       </Link>
       <SupplyChainCard />

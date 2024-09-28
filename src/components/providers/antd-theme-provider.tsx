@@ -14,6 +14,13 @@ const AntDesignThemeProvider = ({ children }: { children: ReactNode }) => {
           Input: {
             colorTextPlaceholder: "#ffffffff",
           },
+          Table: {
+            headerColor: "#fff",
+            borderColor: "#d9d9d9",
+          },
+          Checkbox: {
+            colorPrimary: "#fff",
+          },
         },
       }}
     >

@@ -23,18 +23,14 @@ export const investorPaths = [
         element: <Teams />,
         icon: TbUsers,
       },
-      {
-        name: "Investor Entrepreneur Community",
-        path: "teams/investorEntrepreneurCommunity",
-        element: <InvestorEntrepreneurCommunity />,
-        icon: TbUsers,
-      },
-      {
-        name: "Business Development Entrepreneur Community",
-        path: "teams/businessDevelopmentEntrepreneurCommunity",
-        element: <BusinessDevelopmentEntrepreneurCommunity />,
-        icon: TbUsers,
-      },
     ],
+  },
+  {
+    path: "teams/investor-entrepreneur-community",
+    element: <InvestorEntrepreneurCommunity />,
+  },
+  {
+    path: "teams/business-development-entrepreneur-community",
+    element: <BusinessDevelopmentEntrepreneurCommunity />,
   },
 ];
