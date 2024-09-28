@@ -1,3 +1,4 @@
+import BusinessDevelopmentEntrepreneurCommunity from "@/pages/businessDevelopmentEntrepreneurCommunity/businessDevelopmentEntrepreneurCommunity";
 import InvestorDashboard from "@/pages/investor/dashboard";
 import InvestorEntrepreneurCommunity from "@/pages/investorEntrepreneurCommunity/investorEntrepreneurCommunity";
 import Teams from "@/pages/teams/teams";
@@ -26,6 +27,12 @@ export const investorPaths = [
         name: "Investor Entrepreneur Community",
         path: "teams/investorEntrepreneurCommunity",
         element: <InvestorEntrepreneurCommunity />,
+        icon: TbUsers,
+      },
+      {
+        name: "Business Development Entrepreneur Community",
+        path: "teams/businessDevelopmentEntrepreneurCommunity",
+        element: <BusinessDevelopmentEntrepreneurCommunity />,
         icon: TbUsers,
       },
     ],

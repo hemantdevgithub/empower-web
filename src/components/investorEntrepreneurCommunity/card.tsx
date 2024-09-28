@@ -1,5 +1,5 @@
-import cardIcon from "/InvestorEntrepreneurCommunity/cardIcon.png";
-import arrow from "/InvestorEntrepreneurCommunity/arrow.png";
+import cardIcon from "/entrepreneurCommunity/cardIcon.png";
+import arrow from "/entrepreneurCommunity/arrow.png";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function Card({ cardData }: any) {
