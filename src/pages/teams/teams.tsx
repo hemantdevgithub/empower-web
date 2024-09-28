@@ -1,14 +1,15 @@
-import BusinessDevelopmentCard from "../../components/ui/businessDevelopmentCard";
-import InvestorCommunityCard from "../../components/ui/investorCommunityCard";
-import SupplyChainCard from "../../components/ui/supplyChainCard";
+import BusinessDevelopmentCard from "../../components/teams/businessDevelopmentCard";
+import InvestorCommunityCard from "../../components/teams/investorCommunityCard";
+import SupplyChainCard from "../../components/teams/supplyChainCard";
+import ConnectSourcesCard from "@/components/teams/connectSources";
 
 const Teams = () => {
   return (
-    <div className="grid gap-x-10 gap-y-20 lg:grid-cols-2">
+    <div className="grid gap-x-10 gap-y-5 lg:grid-cols-2">
       <InvestorCommunityCard />
       <BusinessDevelopmentCard />
       <SupplyChainCard />
-      <SupplyChainCard />
+      <ConnectSourcesCard />
     </div>
   );
 };
