@@ -1,3 +1,4 @@
+import AddCustomerPage from "@/pages/add/add-customer";
 import AddLanding from "@/pages/add/add-landing";
 import ReferPage from "@/pages/refer/refer-page";
 import SearchLanding from "@/pages/search/search-landing";
@@ -32,6 +33,14 @@ export const commonPaths = [
     path: "add",
     icon: IoMdAdd,
     element: <AddLanding />,
+    children: [
+      {
+        path: "add/add-customer",
+        name: "All",
+        icon: FaRegCircle,
+        element: <AddCustomerPage />,
+      },
+    ],
   },
   {
     name: "Refer",

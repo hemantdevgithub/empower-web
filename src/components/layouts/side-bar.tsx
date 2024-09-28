@@ -1,17 +1,15 @@
+import { commonPaths } from "@/routes/common.routes";
 import "@/styles/sidebar.style.css";
 import { TSidebarItem } from "@/types";
 import { Layout } from "antd";
 import { Role } from "../../constants/roles";
 import { investorPaths } from "../../routes/investor.routes";
 import { sidebarItemsGenerator } from "../../utility/sidebarItemsGenerator";
-import { useAppSelector } from "@/redux/hooks";
-import { selectUser } from "@/redux/features/auth/authSlice";
 import SidebarMenuItems from "./sidebar-menu-item";
-import { commonPaths } from "@/routes/common.routes";
 const { Sider } = Layout;
 
 const Sidebar = () => {
-  const user = useAppSelector(selectUser);
+  const user = { current_role: "INVESTOR" };
   const commonSidebarItems = sidebarItemsGenerator(commonPaths);
   let sidebarItemsOfUser;
 

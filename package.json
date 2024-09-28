@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^3.9.0",
     "@reduxjs/toolkit": "^2.2.7",
     "antd": "^5.21.0",
+    "clsx": "^2.1.1",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.446.0",
     "prettier": "^3.3.3",
@@ -26,6 +27,7 @@
     "react-router-dom": "^6.26.2",
     "redux-persist": "^6.0.0",
     "sonner": "^1.5.0",
+    "tailwind-merge": "^2.5.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
