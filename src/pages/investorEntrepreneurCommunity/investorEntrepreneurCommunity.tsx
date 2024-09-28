@@ -1,3 +1,4 @@
+import MyNetwork from "@/components/investorEntrepreneurCommunity/myNetwork";
 import MyPortfolio from "@/components/investorEntrepreneurCommunity/myPortfolio";
 
 const InvestorEntrepreneurCommunity = () => {
@@ -5,6 +6,7 @@ const InvestorEntrepreneurCommunity = () => {
     <div>
       {/* My Portfolio */}
       <MyPortfolio />
+      <MyNetwork />
     </div>
   );
 };

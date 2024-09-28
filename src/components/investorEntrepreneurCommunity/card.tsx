@@ -4,9 +4,9 @@ import arrow from "/InvestorEntrepreneurCommunity/arrow.png";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function Card({ cardData }: any) {
   return (
-    <div className="relative h-[263px] w-[262px] rounded-[30px] bg-gradient-to-r from-[#4D4D4D] to-[#0C0C0C] p-4 shadow-lg">
+    <div className="relative h-[263px] w-[262px] rounded-[30px] bg-gradient-to-r from-accent to-secondary-dark p-4 shadow-lg">
       <div className="absolute -top-6 right-0">
-        <div className="relative h-[263px] w-[262px] rounded-[30px] bg-gradient-to-r from-[#0C0C0C] to-[#4D4D4D] p-4 shadow-lg">
+        <div className="relative h-[263px] w-[262px] rounded-[30px] bg-gradient-to-r from-accent to-secondary-dark p-4 shadow-lg">
           <div className={`${cardData?.color} absolute -top-6 left-0 h-[263px] w-[262px] rounded-[30px] p-4 shadow-lg`}>
             <div className="flex h-10 w-10 items-start justify-center rounded-full bg-background p-2">
               <img src={cardIcon} alt="cardIcon" className="h-5 w-5" />
