@@ -1,4 +1,4 @@
-import AddCustomer from "@/components/add/add-customer";
+import AddCustomer from "@/components/add/add-customer/add-customer";
 import Invite from "@/components/add/invite";
 import { Segmented } from "antd";
 import { ReactNode, useMemo, useState } from "react";
