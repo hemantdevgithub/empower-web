@@ -1,4 +1,5 @@
 import AddCustomer from "@/components/add/add-customer/add-customer";
+import BulkUpdateCustomer from "@/components/add/add-customer/bulk-update-customer";
 import Invite from "@/components/add/invite";
 import { Segmented } from "antd";
 import { ReactNode, useMemo, useState } from "react";
@@ -13,14 +14,14 @@ const AddCustomerPage = () => {
   const items = useMemo<TItems[]>(
     () => [
       { label: "Manual Update", value: "manual", children: <AddCustomer /> },
-      { label: "Bulk Update", value: "bulk", children: <div>Bulk</div> },
+      { label: "Bulk Update", value: "bulk", children: <BulkUpdateCustomer /> },
       { label: "Database", value: "database", children: <div>db</div> },
       { label: "Invite", value: "invite", children: <Invite /> },
     ],
     []
   );
 
-  const [tab, setTab] = useState<TItems>(items[3]);
+  const [tab, setTab] = useState<TItems>(items[0]);
 
   const handleChange = (label: string) => {
     const selectedItem = items.find((item) => item.label === label);

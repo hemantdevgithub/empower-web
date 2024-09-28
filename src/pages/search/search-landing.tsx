@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const data = [
   {
     section: "Entrepreneur Community",
@@ -5,14 +7,17 @@ const data = [
       {
         label: "Investor Entrepreneur Community",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Business Entrepreneur Community",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Supply Chain Entrepreneur Community",
         image: "",
+        href: "/search/job-seekers",
       },
     ],
   },
@@ -22,14 +27,17 @@ const data = [
       {
         label: "Job Seekers",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Interviewers",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Specialty Consultants",
         image: "",
+        href: "/search/job-seekers",
       },
     ],
   },
@@ -39,14 +47,17 @@ const data = [
       {
         label: "Job Opportunities",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Interviewers",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Specialty Consultants",
         image: "",
+        href: "/search/job-seekers",
       },
     ],
   },
@@ -56,14 +67,17 @@ const data = [
       {
         label: "Investor Community",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Business Community",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Supply Chain Community",
         image: "",
+        href: "/search/job-seekers",
       },
     ],
   },
@@ -73,14 +87,17 @@ const data = [
       {
         label: "Job Seekers",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Recruiters",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Project Delivery Managers",
         image: "",
+        href: "/search/job-seekers",
       },
     ],
   },
@@ -90,14 +107,17 @@ const data = [
       {
         label: "Job Seekers",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Interviewers",
         image: "",
+        href: "/search/job-seekers",
       },
       {
         label: "Specialty Consultants",
         image: "",
+        href: "/search/job-seekers",
       },
     ],
   },
@@ -110,8 +130,8 @@ const SearchLanding = () => {
         <div key={i} className="space-y-3">
           <h4 className="text-xl">{section}</h4>
           <div className="grid grid-cols-3 gap-5">
-            {children.map(({ label }, i) => (
-              <div key={i} className="group space-y-3">
+            {children.map(({ label, href }, i) => (
+              <Link to={href} key={i} className="group space-y-3">
                 <div className="h-[200px] cursor-pointer overflow-hidden rounded-2xl">
                   <img
                     className="duration-300 group-hover:scale-110"
@@ -120,7 +140,7 @@ const SearchLanding = () => {
                   />
                 </div>
                 <h2>{label}</h2>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -38,7 +38,7 @@ const AddCustomer = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="mx-auto rounded-md bg-white px-8 py-2 text-accent">Upload</button>
+        <button className="rounded-md bg-secondary-dark px-10 py-2">Upload</button>
       </div>
     </div>
   );
