@@ -1,7 +1,7 @@
-import square from "/InvestorEntrepreneurCommunity/square.png";
-import arrowRightCircle from "/InvestorEntrepreneurCommunity/arrowRightCircle.png";
-import cardIcon from "/InvestorEntrepreneurCommunity/cardIcon.png";
-import arrow from "/InvestorEntrepreneurCommunity/arrow.png";
+import square from "/entrepreneurCommunity/square.png";
+import arrowRightCircle from "/entrepreneurCommunity/arrowRightCircle.png";
+import cardIcon from "/entrepreneurCommunity/cardIcon.png";
+import arrow from "/entrepreneurCommunity/arrow.png";
 
 interface CardDataProps {
   id: string;

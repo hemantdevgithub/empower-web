@@ -1,5 +1,5 @@
 import { Card } from "./card";
-import square from "/InvestorEntrepreneurCommunity/square.png";
+import square from "/entrepreneurCommunity/square.png";
 
 interface CardDataProps {
   id: string;

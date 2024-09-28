@@ -10,7 +10,9 @@ const Teams = () => {
       <Link to="/INVESTOR/teams/investorEntrepreneurCommunity">
         <InvestorCommunityCard />
       </Link>
-      <BusinessDevelopmentCard />
+      <Link to="/INVESTOR/teams/businessDevelopmentEntrepreneurCommunity">
+        <BusinessDevelopmentCard />
+      </Link>
       <SupplyChainCard />
       <ConnectSourcesCard />
     </div>
