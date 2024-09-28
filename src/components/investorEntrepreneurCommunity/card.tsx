@@ -1,0 +1,28 @@
+import cardIcon from "/InvestorEntrepreneurCommunity/cardIcon.png";
+import arrow from "/InvestorEntrepreneurCommunity/arrow.png";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function Card({ cardData }: any) {
+  return (
+    <div className="relative h-[263px] w-[262px] rounded-[30px] bg-gradient-to-r from-[#4D4D4D] to-[#0C0C0C] p-4 shadow-lg">
+      <div className="absolute -top-6 right-0">
+        <div className="relative h-[263px] w-[262px] rounded-[30px] bg-gradient-to-r from-[#0C0C0C] to-[#4D4D4D] p-4 shadow-lg">
+          <div className={`${cardData?.color} absolute -top-6 left-0 h-[263px] w-[262px] rounded-[30px] p-4 shadow-lg`}>
+            <div className="flex h-10 w-10 items-start justify-center rounded-full bg-background p-2">
+              <img src={cardIcon} alt="cardIcon" className="h-5 w-5" />
+            </div>
+            <p className="mb-1 mt-5 text-xl font-medium">{cardData?.title}</p>
+            <p className="mb-1 text-lg font-medium">Teams</p>
+            <div className="mt-5 flex items-end justify-between">
+              <h2 className="text-3xl font-semibold">{cardData?.teams} Teams</h2>
+              <p className="flex items-center justify-items-end gap-x-1 text-sm font-medium text-green-400">
+                {cardData?.percentage}
+                <img src={arrow} alt="arrowIcon" className="h-4 w-4 rotate-180" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
