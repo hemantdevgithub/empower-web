@@ -1,4 +1,5 @@
 import AddCustomer from "@/components/add/add-customer";
+import Invite from "@/components/add/invite";
 import { Segmented } from "antd";
 import { ReactNode, useMemo, useState } from "react";
 
@@ -14,12 +15,12 @@ const AddCustomerPage = () => {
       { label: "Manual Update", value: "manual", children: <AddCustomer /> },
       { label: "Bulk Update", value: "bulk", children: <div>Bulk</div> },
       { label: "Database", value: "database", children: <div>db</div> },
-      { label: "Invite", value: "invite", children: <div>invite</div> },
+      { label: "Invite", value: "invite", children: <Invite /> },
     ],
     []
   );
 
-  const [tab, setTab] = useState<TItems>(items[0]);
+  const [tab, setTab] = useState<TItems>(items[3]);
 
   const handleChange = (label: string) => {
     const selectedItem = items.find((item) => item.label === label);
